@@ -1,0 +1,22 @@
+2019-12-09 13:10:43,770 INFO (DirectJDKLog.java:173)- Stopping service [Tomcat]
+2019-12-09 13:10:43,787 INFO (DirectJDKLog.java:173)- The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-12-09 13:10:43,787 INFO (DirectJDKLog.java:173)- Stopping ProtocolHandler ["http-nio-8088"]
+2019-12-09 13:10:43,787 INFO (DirectJDKLog.java:173)- Destroying ProtocolHandler ["http-nio-8088"]
+2019-12-09 13:10:43,787 INFO (ConditionEvaluationReportLoggingListener.java:142)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-09 13:10:43,802 ERROR (LoggingFailureAnalysisReporter.java:42)- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8088 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8088, or configure this application to listen on another port.
+
+2019-12-09 13:10:43,802 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'

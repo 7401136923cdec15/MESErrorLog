@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<c3p0-config>
+    <named-config name="Mysql_dataSource">
+        <property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://127.0.0.1:3306/iplantmes?useUnicode=true&amp;characterEncoding=utf-8&amp;serverTimezone=Asia/Shanghai&amp;useSSL=false&amp;autoReconnect=true&amp;zeroDateTimeBehavior=convertToNull</property>
+        <property name="user">shris</property>
+        <property name="password">Shris_123</property>
+        <property name="acquireIncrement">5</property>
+        <property name="initialPoolSize">10</property>
+        <property name="minPoolSize">5</property>
+        <property name="maxPoolSize">50</property>
+        <property name="maxIdleTime">3600</property>
+        <property name="testConnectionOnCheckin">false</property>
+        <property name="testConnectionOnCheckout">true</property>
+    </named-config>
+
+	<!-- <named-config name="oracleDataSource">
+        <property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://127.0.0.1:3306/iplantmes?useUnicode=true&amp;characterEncoding=utf-8&amp;serverTimezone=UTC&amp;useSSL=false</property>
+        <property name="user">shris</property>
+        <property name="password">Shris_123</property>
+        <property name="acquireIncrement">5</property>
+        <property name="initialPoolSize">10</property>
+        <property name="minPoolSize">5</property>
+        <property name="maxPoolSize">20</property>
+        <property name="maxIdleTime">3600</property>
+        <property name="testConnectionOnCheckin">false</property>
+        <property name="testConnectionOnCheckout">true</property>
+    </named-config> -->
+</c3p0-config>

@@ -1,0 +1,13 @@
+2019-12-06 20:37:54,831 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8080 (http)
+2019-12-06 20:37:54,864 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-06 20:37:54,881 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-12-06 20:37:54,881 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-06 20:37:54,888 INFO (DirectJDKLog.java:173)- Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-06 20:37:54,888 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-06 20:37:54,890 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-06 20:37:54,892 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-06 20:37:54,987 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-12-06 20:37:54,987 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1212 ms
+2019-12-06 20:37:55,292 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-06 20:37:55,492 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8080"]
+2019-12-06 20:37:55,527 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8080 (http) with context path ''

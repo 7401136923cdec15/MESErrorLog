@@ -1,0 +1,45 @@
+2019-12-06 19:16:18,685 INFO (StartupInfoLogger.java:50)- Starting Application on DESKTOP-K111BBP with PID 7928 (started by ShrisJava in C:\Users\ShrisJava\Workspaces\MyEclipse CI\MESErrorLog)
+2019-12-06 19:16:18,723 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-12-06 19:16:19,952 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8088 (http)
+2019-12-06 19:16:19,966 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8088"]
+2019-12-06 19:16:19,983 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-12-06 19:16:19,984 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-06 19:16:19,991 INFO (DirectJDKLog.java:173)- Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-06 19:16:19,991 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-06 19:16:19,991 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-06 19:16:20,018 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-06 19:16:20,107 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-12-06 19:16:20,107 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1291 ms
+2019-12-06 19:16:20,388 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-06 19:16:20,545 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8088"]
+2019-12-06 19:16:20,564 ERROR (DirectJDKLog.java:175)- Failed to start component [Connector[HTTP/1.1-8088]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.mes.errorlog.server.Application.main(Application.java:21)
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:461)
+	at java.base/sun.nio.ch.Net.bind(Net.java:453)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1085)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1171)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2019-12-06 19:16:20,570 INFO (DirectJDKLog.java:173)- Pausing ProtocolHandler ["http-nio-8088"]

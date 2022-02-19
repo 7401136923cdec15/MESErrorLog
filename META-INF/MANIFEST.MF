@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven 3.5.3
+Built-By: ShrisJava
+Build-Jdk: 11.0.2
+Implementation-Title: MESNCR
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.mes
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/MESNCR
+Main-Class: org.springframework.boot.loader.WarLauncher
+Start-Class: com.mes.ncr.server.Application
+Spring-Boot-Version: 2.1.3.RELEASE
+Spring-Boot-Classes: WEB-INF/classes/
+Spring-Boot-Lib: WEB-INF/lib/
+
